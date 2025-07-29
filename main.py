@@ -45,8 +45,8 @@ locator = {
 
 driver.get('https://zabbix.tely.com.br/index.php')
 
-WebDriverWait(driver, 10).until(EC.element_to_be_clickable(locator['usuario'])).send_keys('Admin')
-driver.find_element(*locator['senha']).send_keys('ZAmw390711@')
+WebDriverWait(driver, 10).until(EC.element_to_be_clickable(locator['usuario'])).send_keys('ex_usuario')
+driver.find_element(*locator['senha']).send_keys('ex_ senha')
 driver.find_element(*locator['entrar']).click()
 
 WebDriverWait(driver, 30).until(EC.element_to_be_clickable(locator['tela_inicial']))
